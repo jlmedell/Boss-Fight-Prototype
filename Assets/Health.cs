@@ -8,11 +8,13 @@ public class Health : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        FightOSC.Instance.SendHealth(currentHealth, maxHealth);
     }
 
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        FightOSC.Instance.SendHealth(currentHealth, maxHealth);
 
         if (currentHealth <= 0)
         {

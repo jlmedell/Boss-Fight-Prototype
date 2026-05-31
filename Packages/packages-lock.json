@@ -283,6 +283,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "jp.keijiro.osc-jack": {
+      "version": "https://github.com/keijiro/OscJack.git?path=/Packages/jp.keijiro.osc-jack",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "56d60f3100c91108bc7c2be81336a8ed31b6f3ac"
+    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,

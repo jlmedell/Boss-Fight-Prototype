@@ -17,6 +17,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
+        FightOSC.Instance.SendPunch();
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(
             attackPoint.position,
             attackRange,
@@ -26,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             hit.GetComponent<Health>().TakeDamage(damage);
+            FightOSC.Instance.SendHit();
         }
     }
 
