@@ -967,6 +967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 20
   currentHealth: 0
+  oscAddress: /boss_health
 --- !u!114 &598816702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 10
   currentHealth: 0
+  oscAddress: /player_health
 --- !u!114 &1412269214
 MonoBehaviour:
   m_ObjectHideFlags: 0
