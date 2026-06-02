@@ -13,13 +13,13 @@ public class FightOSC : MonoBehaviour
     }
 
     public void SendPunch() => _client.Send("/punch", 1);
-    public void SendHit()   => _client.Send("/hit", 1);
-    public void SendJump()  => _client.Send("/jump", 1);
+    public void SendHit() => _client.Send("/hit", 1);
+    public void SendJump() => _client.Send("/jump", 1);
 
-    public void SendHealth(float current, float max)
+    public void SendHealth(string address, float current, float max)
     {
         float normalized = Mathf.Clamp01(current / max);
-        _client.Send("/health", normalized);
+        _client.Send(address, normalized);
     }
 
     void OnDestroy() => _client?.Dispose();
