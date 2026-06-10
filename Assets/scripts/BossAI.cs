@@ -18,6 +18,8 @@ public class BossAI : MonoBehaviour
 
     void Update()
     {
+        if (player == null) return;
+
         attackTimer -= Time.deltaTime;
 
         float distance = Vector2.Distance(
